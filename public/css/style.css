@@ -12,19 +12,20 @@ header{
     position: fixed;
     top: 0;
     margin-bottom: 100px; */
-    background-color: #EAC926;
-    
+    background-color: #EAC926;  
 }
 
 .formulario{
-    margin-top: 100px;
+    margin-top: 20px;
+    padding-top: 20px;
 }
+
 header nav .mercadoliebre{
     width: 240px;
 }
 
 header .search-bar{
-    margin: 18px 0;
+    margin-top: 15px;
     
 }
 .nav-menu ul{
@@ -38,8 +39,6 @@ header .search-bar{
     display: inline-block;
     padding: 5px 0;
 }
-
-
 h2{
     font-size: 24px;
     text-align: center;
@@ -50,7 +49,6 @@ h2{
     font-size: 18px;
     line-height:0
     
-   
 }
 
 h3{
@@ -61,14 +59,14 @@ h3{
     display: inline-block;
     color: #39b54a;
     font-size: 16px;
-    line-height:0
-   
+    line-height:0 
 }
 
-footer{
-    display: flex;
+footer{ 
+    /* hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh modificar 2*/
+   /*  display: flex;
     flex-wrap:wrap;
-    justify-content: space-around;
+    justify-content: space-around; */
     background-color: #ebebeb;
     margin-top: 10px;
     text-align: center;
@@ -82,7 +80,7 @@ margin-bottom: -15px;
 
 footer p {
 color: #666;
-margin-bottom: 100px;
+margin-bottom: 50px;
 }
 
 .burger-menu{
@@ -99,18 +97,16 @@ border-radius: 3px;
 .fa-credit-card, .fa-gift, .fa-user-shield{
     font-size: 2em;
     color: #1259c3;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
     scale: 1;
     transition: color 1s, scale 1s;
 }
 
 .fa-credit-card:hover, .fa-gift:hover, .fa-user-shield:hover{
     color: #24e845;
-    scale: 1.1;
+    scale: 1.3;
 
 }
-
-
 
 .fa-hand-holding-usd{
     font-size: 16px;
@@ -133,7 +129,6 @@ background-color: white;
 padding: 10px;
 
 }
-
 
 div .fa-shipping-fast{ 
 margin-top: 15px;
@@ -165,8 +160,8 @@ section div img{
  }
 
  .form-button{
-    width: 80%;
-    height: 40px;
+    width: 30%;
+    height: 50px;
     margin-bottom: 40px;
     border-radius: 5px;
     border: none;
@@ -180,12 +175,28 @@ section div img{
 
  .form-login [type="submit"]{
     color: white;
+
+ }
+
+ .formulario .register-button{
+    margin-top: 20px;
  }
 
 
 @media (min-width: 359px){
     .nav-menu{
         display: none;
+    }
+
+    .formulario, .form-login{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
+    .form-button{
+        width: 80%;
     }
 
     header nav .mercadoliebre{
@@ -220,16 +231,19 @@ section div img{
             }
             
             
-            div .fa-shipping-fast{
+        div .fa-shipping-fast{
             position: absolute; 
             right: 15px;
             bottom: 60px;   
             }
-
+        .copyright{
+                text-align: center;
+                color: #666;
+                margin-top: 5px;
+            }
         
 
-    
-
+     
 }
 
 @media (min-width: 769px){
@@ -295,7 +309,7 @@ section div img{
         .nav-menu{
             display: flex;
             justify-content: space-between;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
         .nav-menu ul{
             display: flex;
@@ -321,10 +335,10 @@ section div img{
             align-items: center;
             }
 
-        header .search input{
+        header .search input{ /* ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd */
             border-radius: 4px;
             max-width: 700px;
-            height: 20px;
+            height: 30px;
             border: #ebebeb;
         }
 
@@ -337,23 +351,37 @@ section div img{
         .input-form, .login-page{
             display: inline-block;
             justify-content: center;
-            width: 80%;
+            width: 40%;
             height: 40px;
             margin-bottom: 40px;
             border-radius: 5px;
             border: none;
          }
 
+         footer{                        /* trabajando con footer */
+            max-width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: space-between;
+         }
+
+         footer div{
+            margin: 0 10px
+         }
+
+    .form-button{
+        width: 40%;
+    }
+
      }
     
-
-
 @media (min-width: 1200px){
     .search-bar, .nav-menu ,header{
         max-width: 1200px;
-        margin: auto;
-        
+        margin: auto;    
     }
+
     .banner{ 
         margin-top: 20px;
     }
@@ -372,10 +400,20 @@ section div img{
     display: flex;  
     justify-content: center;
     align-items: center;
-
+    position: relative;
+    width: 25%;
     }
+
+    .search input{
+        width: 400px;
+    }
+    .fa-search{
+        position: absolute;
+        right: 2px;
+    }
+
     header nav .mercadoliebre{
-        width: 40%;
+        width: 20%;
     }
 
     .header-title{
@@ -388,15 +426,15 @@ section div img{
         }
         
         
-        div .fa-shipping-fast{
+    div .fa-shipping-fast{
         position: absolute; 
         right: 15px;
         bottom: 90px;   
        
-        
         }
     
-        footer{
+    footer{
+            max-width: 100%;
             display: flex;
             flex-wrap:wrap;
             justify-content: space-around;
@@ -404,29 +442,35 @@ section div img{
             margin-top: 10px;
             text-align: center;
             padding: 10px;
+            align-items: center;
         }
-
-
 }
 
-@media (min-width: 1380px){ 
-    footer{
-        text-align: center;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        padding-left: 100px;
-        position:relative
-    }
-
-    .copyright{
-        position: absolute;
-        bottom: 10px;
-        text-align: center;
-        left: 40%;
+@media (min-width: 1380px){
     
+    .search-bar, .nav-menu ,header{
+        max-width: 1400px;
+        margin: auto;
+        background-color: #EAC926;
     }
 
-   
-
+    .banner{
+        background-color: #ebebeb;
+        
+     }
+       
+   /*  footer{
+        max-width: 100%; 
+        padding-top: 10px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+ */
+    .search-bar .mercadoliebre{
+        width: 15%;
+    }
+    .search input{
+        width: 400px;
+    }
 
 }
