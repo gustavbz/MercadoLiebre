@@ -10,7 +10,7 @@ const port = process.env.PORT || 3000;
 app.listen(port, () =>
     console.log(`servidor corriendo ${port}`));
 
-app.get("/home", (req,res)=>{
+app.get("/", (req,res)=>{
     res.sendFile(path.resolve(__dirname, "./views/home.html"))
 });
 
