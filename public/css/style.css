@@ -20,13 +20,12 @@ header{
     padding-top: 20px;
 }
 
-header nav .mercadoliebre{
+header nav a .mercadoliebre{
     width: 240px;
 }
 
 header .search-bar{
     margin-top: 15px;
-    
 }
 .nav-menu ul{
     list-style: none;
@@ -169,7 +168,7 @@ section div img{
     transition: background-color 2s; 
 
  }
-    .form-button:hover{
+ .form-button:hover{
         background-color: #0022AA;
     }
 
@@ -199,8 +198,8 @@ section div img{
         width: 80%;
     }
 
-    header nav .mercadoliebre{
-        width: 40%;
+    header nav a .mercadoliebre{
+        width: 240px;
     }
 
     h3{
@@ -226,7 +225,7 @@ section div img{
             
         }
 
-        section div{
+      section div{
             position: relative;
             }
             
@@ -296,8 +295,8 @@ section div img{
             justify-content: space-between;
             margin: 20px 0;
         }
-        header nav .mercadoliebre{
-            width: 25%;
+        header nav a .mercadoliebre{
+            width: 240px;
         }
 
         .header-title{
@@ -466,8 +465,8 @@ section div img{
         justify-content: space-evenly;
     }
  */
-    .search-bar .mercadoliebre{
-        width: 15%;
+    .search-bar a .mercadoliebre{
+        width: 240px;
     }
     .search input{
         width: 400px;
